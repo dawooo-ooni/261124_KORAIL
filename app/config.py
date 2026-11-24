@@ -31,13 +31,15 @@ class Config:
 
         uri = overrides.get("SQLALCHEMY_DATABASE_URI", "")
         if uri.startswith(("postgres://", "postgresql://")):
-            # Supabase Postgres: psycopg3 드라이버 사용, 서버리스에서는 연결을 풀링하지 않는다
-            # (Supabase 커넥션 풀러가 풀링을 담당). 트랜잭션 풀러 호환을 위해 prepared statement 끔.
-            from sqlalchemy.pool import NullPool
+            # Supabase Postgres (psycopg3). 서버리스 인스턴스가 살아 있는 동안 연결 1~2개를 재사용하고,
+            # 오래된 연결은 버린다. 트랜잭션 풀러(6543) 호환을 위해 prepared statement 는 끈다.
             overrides["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg://" + uri.split("://", 1)[1]
             overrides["SQLALCHEMY_ENGINE_OPTIONS"] = {
-                "poolclass": NullPool,
-                "connect_args": {"prepare_threshold": None},
+                "pool_size": 1,
+                "max_overflow": 2,
+                "pool_recycle": 120,
+                "pool_pre_ping": True,
+                "connect_args": {"prepare_threshold": None, "connect_timeout": 10},
             }
 
         if os.environ.get("VERCEL"):
