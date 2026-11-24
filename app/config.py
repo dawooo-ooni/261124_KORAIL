@@ -24,7 +24,7 @@ class Config:
             "DATABASE_URL": "SQLALCHEMY_DATABASE_URI",
         }
         for env_key, cfg_key in mapping.items():
-            value = os.environ.get(env_key)
+            value = (os.environ.get(env_key) or "").strip()  # 대시보드/CLI 입력 시 붙는 줄바꿈 제거
             if value:
                 overrides[cfg_key] = value
 
