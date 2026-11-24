@@ -58,6 +58,14 @@ instance/lunch.db    SQLite DB (자동 생성)
 logs/app.log         요청 오류·관리자 작업 기록
 ```
 
+## 배포 (Vercel + Supabase)
+
+- 사이트: https://261124korail-hazel.vercel.app
+- `main` 브랜치에 push 하면 Vercel 이 자동으로 프로덕션 배포합니다. 다른 브랜치는 미리보기 배포가 만들어집니다.
+- DB 는 Supabase 프로젝트 `261124_KORAIL`(서울)의 Postgres 입니다. 함수 리전도 서울(`icn1`)로 맞춰 두었습니다.
+- Vercel 환경변수: `SECRET_KEY`, `ADMIN_PASSWORD`, `DATABASE_URL`(Supabase 트랜잭션 풀러 `:6543`).
+- 운영 DB 에 테이블 생성·시드가 필요하면 로컬에서 `DATABASE_URL` 을 운영 값으로 지정하고 `flask init-db`, `flask seed` 를 실행합니다.
+
 ## 참고
 
 - 사용자는 로그인 없이 쿠키 `lp_uid`(UUID, HttpOnly, SameSite=Lax, 1년)로 구분합니다. 브라우저가 다르면 다른 사용자입니다.
