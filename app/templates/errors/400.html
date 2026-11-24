@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}잘못된 요청{% endblock %}
+{% block content %}
+<div class="errbox">
+  <div class="big">⚠️</div>
+  <h1 class="page-title">400 · 잘못된 요청</h1>
+  <p class="muted">{{ message or "요청을 처리할 수 없어요." }}</p>
+  <a class="btn primary" href="javascript:history.back()">돌아가기</a>
+</div>
+{% endblock %}

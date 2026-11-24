@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}{{ '메뉴 수정' if menu else '메뉴 추가' }} · 관리자{% endblock %}
+{% macro field(f, attrs={}) %}
+  <label class="field">
+    <span>{{ f.label.text }}</span>
+    {{ f(**attrs) }}
+    {% for e in f.errors %}<em class="err">{{ e }}</em>{% endfor %}
+  </label>
+{% endmacro %}
+{% macro checks(f) %}
+  <fieldset class="field checks">
+    <legend>{{ f.label.text }}</legend>
+    {{ f() }}
+    {% for e in f.errors %}<em class="err">{{ e }}</em>{% endfor %}
+  </fieldset>
+{% endmacro %}
+{% block content %}
+<div class="page-h">
+  <div>
+    <div class="kicker">ADMIN</div>
+    <h1 class="page-title">{{ '메뉴 수정' if menu else '메뉴 추가' }}</h1>
+  </div>
+  <a class="btn ghost" href="{{ url_for('admin.menus') }}">← 목록으로</a>
+</div>
+
+<form method="post" class="panel form grid-form" novalidate>
+  {{ form.hidden_tag() }}
+  <div class="grid2">
+    {{ field(form.name, {'maxlength': 30}) }}
+    {{ field(form.emoji, {'maxlength': 16, 'placeholder': '🍲'}) }}
+    {{ field(form.category) }}
+    {{ field(form.price, {'type': 'number', 'min': 1000, 'max': 100000, 'step': 500}) }}
+    {{ field(form.fullness, {'type': 'number', 'min': 1, 'max': 5}) }}
+    {{ field(form.time_min, {'type': 'number', 'min': 1, 'max': 120}) }}
+  </div>
+  {{ field(form.description, {'maxlength': 80}) }}
+  <div class="inline-checks">
+    <label>{{ form.has_soup() }} {{ form.has_soup.label.text }}</label>
+    <label>{{ form.is_active() }} {{ form.is_active.label.text }}</label>
+  </div>
+  <div class="grid2">
+    {{ checks(form.tastes) }}
+    {{ checks(form.ingredients) }}
+    {{ checks(form.weathers) }}
+    {{ checks(form.situations) }}
+  </div>
+  <div class="form-actions">
+    <button class="btn primary" type="submit">{{ '저장' if menu else '추가' }}</button>
+    <a class="btn ghost" href="{{ url_for('admin.menus') }}">취소</a>
+  </div>
+</form>
+
+{% if menu %}
+<section class="panel danger-zone">
+  <h2 class="panel-t">⚠️ 위험 구역</h2>
+  {% if decision_count %}
+  <p>이 메뉴에는 결정 이력이 <b>{{ decision_count }}건</b> 있어요. 추천에서 빼려면 삭제보다 <b>중지</b>를 권장해요.
+     삭제해도 이력의 메뉴명·가격은 남지만 통계의 카테고리는 ‘기타’로 바뀌어요.</p>
+  {% else %}
+  <p>삭제하면 되돌릴 수 없어요.</p>
+  {% endif %}
+  <div class="row-actions">
+    {% if menu.is_active %}
+    <form method="post" action="{{ url_for('admin.menu_toggle', menu_id=menu.id) }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button class="btn sm ghost" type="submit">중지하기 (권장)</button>
+    </form>
+    {% endif %}
+    <form method="post" action="{{ url_for('admin.menu_delete', menu_id=menu.id) }}"
+          data-confirm="‘{{ menu.name }}’ 메뉴를 정말 삭제할까요? 되돌릴 수 없어요." onsubmit="return confirm(this.dataset.confirm);">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="force" value="1">
+      <button class="btn sm ghost danger" type="submit">그래도 삭제</button>
+    </form>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

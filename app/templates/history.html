@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block title %}결정 이력 · 점심메뉴 추천기{% endblock %}
+{% block content %}
+<div class="page-h">
+  <div>
+    <div class="kicker">MY LUNCH LOG</div>
+    <h1 class="page-title">결정 이력</h1>
+    <p class="muted">이 브라우저에서 결정한 점심 기록이에요. 최근 30일 통계도 함께 보여 드려요.</p>
+  </div>
+  <form class="nickform" id="nickForm">
+    <label for="nickname">닉네임 (선택)</label>
+    <div class="nickrow">
+      <input id="nickname" name="nickname" maxlength="20" placeholder="예: 점심요정" value="{{ user.nickname or '' }}">
+      <button class="btn sm primary" type="submit">저장</button>
+    </div>
+  </form>
+</div>
+
+<section class="stats">
+  <div class="panel stat">
+    <div class="stat-l">최근 30일 결정</div>
+    <div class="stat-v">{{ stats.total }}<small>회</small></div>
+  </div>
+  <div class="panel stat">
+    <div class="stat-l">평균 점심 지출</div>
+    <div class="stat-v">{% if stats.avg_spend is not none %}{{ "{:,}".format(stats.avg_spend) }}<small>원</small>{% else %}–{% endif %}</div>
+  </div>
+  <div class="panel">
+    <h2 class="panel-t">🏆 많이 먹은 메뉴 TOP 5</h2>
+    {% if stats.top_menus %}
+    <ol class="bars">
+      {% for t in stats.top_menus %}
+      <li><span class="bar-l">{{ t.emoji }} {{ t.name }}</span>
+        <span class="bar"><i style="width:{{ (t.count / top_max * 100)|round|int }}%"></i></span>
+        <span class="bar-v">{{ t.count }}회</span></li>
+      {% endfor %}
+    </ol>
+    {% else %}<p class="muted">아직 데이터가 없어요.</p>{% endif %}
+  </div>
+  <div class="panel">
+    <h2 class="panel-t">🍱 카테고리 비율</h2>
+    {% if stats.category_ratio %}
+    <ol class="bars">
+      {% for cat, v in stats.category_ratio.items() %}
+      <li><span class="bar-l">{{ cat }}</span>
+        <span class="bar"><i style="width:{{ v.pct }}%"></i></span>
+        <span class="bar-v">{{ v.pct }}%</span></li>
+      {% endfor %}
+    </ol>
+    {% else %}<p class="muted">아직 데이터가 없어요.</p>{% endif %}
+  </div>
+</section>
+
+<section class="panel">
+  <div class="sec-h"><h2>🕘 전체 결정 이력</h2><span class="sub">총 {{ pagination.total }}건</span></div>
+  {% if pagination.items %}
+  <div class="table-wrap">
+  <table class="tbl">
+    <thead><tr><th>결정 시각</th><th>메뉴</th><th>가격</th><th>추천 사유</th></tr></thead>
+    <tbody>
+    {% for d in pagination.items %}
+      <tr>
+        <td class="nowrap">{{ d.decided_at.strftime('%Y-%m-%d %H:%M') }}</td>
+        <td class="nowrap">{{ d.menu.emoji if d.menu else '🍽️' }} <b>{{ d.menu_name }}</b>{% if not d.menu %} <span class="tag">삭제된 메뉴</span>{% endif %}</td>
+        <td class="nowrap">{{ "{:,}".format(d.price_at_decision) }}원</td>
+        <td class="reason-cell">{{ d.reason }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% if pagination.pages > 1 %}
+  <nav class="pager" aria-label="페이지">
+    {% if pagination.has_prev %}<a class="btn sm ghost" href="{{ url_for('main.history', page=pagination.prev_num) }}">← 이전</a>{% endif %}
+    {% for p in pagination.iter_pages(left_edge=1, right_edge=1, left_current=2, right_current=2) %}
+      {% if p %}
+        {% if p == pagination.page %}<span class="btn sm primary" aria-current="page">{{ p }}</span>
+        {% else %}<a class="btn sm ghost" href="{{ url_for('main.history', page=p) }}">{{ p }}</a>{% endif %}
+      {% else %}<span class="muted">…</span>{% endif %}
+    {% endfor %}
+    {% if pagination.has_next %}<a class="btn sm ghost" href="{{ url_for('main.history', page=pagination.next_num) }}">다음 →</a>{% endif %}
+  </nav>
+  {% endif %}
+  {% else %}
+  <div class="empty-box">아직 결정한 메뉴가 없어요. <a href="{{ url_for('main.index') }}">메인에서 점심을 골라 보세요 →</a></div>
+  {% endif %}
+</section>
+{% endblock %}
+
+{% block after %}<div class="toast" id="toast" role="status"></div>{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/history.js') }}"></script>{% endblock %}

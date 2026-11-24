@@ -1,0 +1,10 @@
+.venv
+.env
+instance
+logs
+tests
+.pytest_cache
+__pycache__
+.claude
+supabase/.temp
+node_modules

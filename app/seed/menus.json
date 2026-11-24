@@ -1,0 +1,1436 @@
+[
+  {
+    "emoji": "🍲",
+    "name": "김치찌개",
+    "category": "한식",
+    "price": 9000,
+    "tastes": [
+      "매운맛",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "밥"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "비",
+      "흐림"
+    ],
+    "situations": [
+      "혼밥",
+      "동료",
+      "빨리"
+    ],
+    "fullness": 4,
+    "time_min": 15,
+    "description": "잘 익은 김치와 돼지고기를 푹 끓인 든든한 찌개"
+  },
+  {
+    "emoji": "🥘",
+    "name": "된장찌개",
+    "category": "한식",
+    "price": 9000,
+    "tastes": [
+      "담백",
+      "든든"
+    ],
+    "ingredients": [
+      "채소",
+      "밥"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "흐림",
+      "맑음"
+    ],
+    "situations": [
+      "혼밥",
+      "동료",
+      "빨리"
+    ],
+    "fullness": 4,
+    "time_min": 15,
+    "description": "구수한 된장에 두부와 애호박을 넣은 집밥 같은 한 끼"
+  },
+  {
+    "emoji": "🐷",
+    "name": "제육볶음",
+    "category": "한식",
+    "price": 10000,
+    "tastes": [
+      "매운맛",
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "흐림"
+    ],
+    "situations": [
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 5,
+    "time_min": 20,
+    "description": "매콤달콤한 양념에 볶은 돼지고기, 밥도둑의 정석"
+  },
+  {
+    "emoji": "🥗",
+    "name": "비빔밥",
+    "category": "한식",
+    "price": 10000,
+    "tastes": [
+      "담백",
+      "가벼움"
+    ],
+    "ingredients": [
+      "채소",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "더움"
+    ],
+    "situations": [
+      "혼밥",
+      "빨리"
+    ],
+    "fullness": 3,
+    "time_min": 15,
+    "description": "여러 나물과 고추장을 쓱쓱 비벼 먹는 균형 잡힌 한 그릇"
+  },
+  {
+    "emoji": "🍖",
+    "name": "순댓국",
+    "category": "한식",
+    "price": 10000,
+    "tastes": [
+      "든든",
+      "담백"
+    ],
+    "ingredients": [
+      "돼지",
+      "밥"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "비"
+    ],
+    "situations": [
+      "혼밥",
+      "해장"
+    ],
+    "fullness": 5,
+    "time_min": 20,
+    "description": "뽀얀 국물에 순대와 머릿고기를 듬뿍 넣은 국밥"
+  },
+  {
+    "emoji": "🌭",
+    "name": "부대찌개",
+    "category": "한식",
+    "price": 11000,
+    "tastes": [
+      "매운맛",
+      "든든",
+      "기름진"
+    ],
+    "ingredients": [
+      "돼지",
+      "면",
+      "밥"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "비",
+      "추움"
+    ],
+    "situations": [
+      "동료",
+      "회식"
+    ],
+    "fullness": 5,
+    "time_min": 30,
+    "description": "햄·소시지·라면사리가 어우러진 얼큰한 찌개"
+  },
+  {
+    "emoji": "🍜",
+    "name": "바지락칼국수",
+    "category": "한식",
+    "price": 9500,
+    "tastes": [
+      "담백"
+    ],
+    "ingredients": [
+      "면",
+      "해산물"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "비",
+      "흐림"
+    ],
+    "situations": [
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 4,
+    "time_min": 20,
+    "description": "바지락 우린 시원한 국물에 손칼국수"
+  },
+  {
+    "emoji": "🥶",
+    "name": "물냉면",
+    "category": "한식",
+    "price": 12000,
+    "tastes": [
+      "가벼움",
+      "담백"
+    ],
+    "ingredients": [
+      "소",
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "더움",
+      "맑음"
+    ],
+    "situations": [
+      "동료",
+      "빨리"
+    ],
+    "fullness": 3,
+    "time_min": 15,
+    "description": "살얼음 동동 뜬 육수에 쫄깃한 메밀면"
+  },
+  {
+    "emoji": "🍖",
+    "name": "갈비탕",
+    "category": "한식",
+    "price": 15000,
+    "tastes": [
+      "담백",
+      "든든"
+    ],
+    "ingredients": [
+      "소",
+      "밥"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움"
+    ],
+    "situations": [
+      "회식",
+      "해장"
+    ],
+    "fullness": 5,
+    "time_min": 20,
+    "description": "큼직한 소갈비를 맑게 우려낸 보양 국물"
+  },
+  {
+    "emoji": "🐔",
+    "name": "삼계탕",
+    "category": "한식",
+    "price": 17000,
+    "tastes": [
+      "담백",
+      "든든"
+    ],
+    "ingredients": [
+      "닭",
+      "밥"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "더움",
+      "추움"
+    ],
+    "situations": [
+      "회식"
+    ],
+    "fullness": 5,
+    "time_min": 30,
+    "description": "영계 한 마리에 찹쌀과 인삼을 넣은 보양식"
+  },
+  {
+    "emoji": "🥬",
+    "name": "보쌈정식",
+    "category": "한식",
+    "price": 13000,
+    "tastes": [
+      "담백",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "밥",
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "흐림"
+    ],
+    "situations": [
+      "동료",
+      "회식"
+    ],
+    "fullness": 4,
+    "time_min": 25,
+    "description": "부드럽게 삶은 수육과 김치, 쌈채소 한 상"
+  },
+  {
+    "emoji": "🫘",
+    "name": "콩나물국밥",
+    "category": "한식",
+    "price": 8000,
+    "tastes": [
+      "담백",
+      "가벼움"
+    ],
+    "ingredients": [
+      "밥",
+      "채소"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "비"
+    ],
+    "situations": [
+      "해장",
+      "빨리",
+      "혼밥"
+    ],
+    "fullness": 3,
+    "time_min": 10,
+    "description": "시원하고 칼칼한 국물, 해장의 정석"
+  },
+  {
+    "emoji": "🌶️",
+    "name": "육개장",
+    "category": "한식",
+    "price": 11000,
+    "tastes": [
+      "매운맛",
+      "든든"
+    ],
+    "ingredients": [
+      "소",
+      "밥",
+      "채소"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "비"
+    ],
+    "situations": [
+      "해장",
+      "혼밥"
+    ],
+    "fullness": 4,
+    "time_min": 15,
+    "description": "소고기와 대파를 얼큰하게 끓인 빨간 국"
+  },
+  {
+    "emoji": "🥢",
+    "name": "짜장면",
+    "category": "중식",
+    "price": 7500,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "면"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "비",
+      "흐림"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 4,
+    "time_min": 10,
+    "description": "달큰한 춘장 소스, 영원한 배달 1순위"
+  },
+  {
+    "emoji": "🦐",
+    "name": "짬뽕",
+    "category": "중식",
+    "price": 9000,
+    "tastes": [
+      "매운맛"
+    ],
+    "ingredients": [
+      "해산물",
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "비",
+      "추움"
+    ],
+    "situations": [
+      "해장",
+      "동료"
+    ],
+    "fullness": 4,
+    "time_min": 15,
+    "description": "불맛 나는 얼큰한 해물 국물 면"
+  },
+  {
+    "emoji": "🍳",
+    "name": "볶음밥",
+    "category": "중식",
+    "price": 8500,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "흐림"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥"
+    ],
+    "fullness": 4,
+    "time_min": 10,
+    "description": "웍에 고슬고슬 볶아 짜장 소스를 곁들인 밥"
+  },
+  {
+    "emoji": "🍤",
+    "name": "탕수육 세트",
+    "category": "중식",
+    "price": 16000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "면"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "흐림"
+    ],
+    "situations": [
+      "회식",
+      "동료"
+    ],
+    "fullness": 5,
+    "time_min": 25,
+    "description": "바삭한 탕수육에 짜장면이 함께 나오는 세트"
+  },
+  {
+    "emoji": "🔥",
+    "name": "마라탕",
+    "category": "중식",
+    "price": 12000,
+    "tastes": [
+      "매운맛"
+    ],
+    "ingredients": [
+      "소",
+      "면",
+      "채소"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "비"
+    ],
+    "situations": [
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 4,
+    "time_min": 20,
+    "description": "얼얼한 마라 국물에 원하는 재료를 골라 담는 탕"
+  },
+  {
+    "emoji": "🧈",
+    "name": "마파두부밥",
+    "category": "중식",
+    "price": 9500,
+    "tastes": [
+      "매운맛",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "추움"
+    ],
+    "situations": [
+      "혼밥",
+      "빨리"
+    ],
+    "fullness": 4,
+    "time_min": 12,
+    "description": "두반장으로 볶은 두부와 다진 고기를 얹은 덮밥"
+  },
+  {
+    "emoji": "🍗",
+    "name": "깐풍기 정식",
+    "category": "중식",
+    "price": 14000,
+    "tastes": [
+      "매운맛",
+      "기름진"
+    ],
+    "ingredients": [
+      "닭",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음"
+    ],
+    "situations": [
+      "회식",
+      "동료"
+    ],
+    "fullness": 4,
+    "time_min": 25,
+    "description": "바삭한 닭튀김을 매콤새콤한 소스에 볶은 요리"
+  },
+  {
+    "emoji": "🍥",
+    "name": "울면",
+    "category": "중식",
+    "price": 9000,
+    "tastes": [
+      "담백"
+    ],
+    "ingredients": [
+      "해산물",
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "흐림"
+    ],
+    "situations": [
+      "혼밥"
+    ],
+    "fullness": 3,
+    "time_min": 15,
+    "description": "걸쭉하고 순한 해물 국물의 숨은 별미"
+  },
+  {
+    "emoji": "🧊",
+    "name": "중국냉면",
+    "category": "중식",
+    "price": 11000,
+    "tastes": [
+      "가벼움"
+    ],
+    "ingredients": [
+      "해산물",
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "더움"
+    ],
+    "situations": [
+      "동료",
+      "빨리"
+    ],
+    "fullness": 3,
+    "time_min": 15,
+    "description": "땅콩 소스가 고소한 차가운 해물 냉면"
+  },
+  {
+    "emoji": "🐖",
+    "name": "돈카츠",
+    "category": "일식",
+    "price": 11000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "흐림"
+    ],
+    "situations": [
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 5,
+    "time_min": 20,
+    "description": "두툼한 등심을 바삭하게 튀긴 일식 돈카츠"
+  },
+  {
+    "emoji": "🍜",
+    "name": "돈코츠 라멘",
+    "category": "일식",
+    "price": 11000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "비"
+    ],
+    "situations": [
+      "혼밥",
+      "해장"
+    ],
+    "fullness": 4,
+    "time_min": 15,
+    "description": "진한 돼지뼈 국물에 차슈를 올린 라멘"
+  },
+  {
+    "emoji": "🍣",
+    "name": "초밥 세트",
+    "category": "일식",
+    "price": 16000,
+    "tastes": [
+      "담백",
+      "가벼움"
+    ],
+    "ingredients": [
+      "해산물",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "더움"
+    ],
+    "situations": [
+      "회식",
+      "동료"
+    ],
+    "fullness": 3,
+    "time_min": 20,
+    "description": "제철 생선으로 쥔 초밥 10~12피스"
+  },
+  {
+    "emoji": "🥩",
+    "name": "규동",
+    "category": "일식",
+    "price": 9000,
+    "tastes": [
+      "든든"
+    ],
+    "ingredients": [
+      "소",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "맑음"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥"
+    ],
+    "fullness": 4,
+    "time_min": 10,
+    "description": "달큰하게 졸인 소고기를 올린 덮밥"
+  },
+  {
+    "emoji": "🥣",
+    "name": "가케우동",
+    "category": "일식",
+    "price": 8500,
+    "tastes": [
+      "담백",
+      "가벼움"
+    ],
+    "ingredients": [
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "비",
+      "추움"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥",
+      "해장"
+    ],
+    "fullness": 3,
+    "time_min": 10,
+    "description": "가쓰오 국물에 탱탱한 우동면"
+  },
+  {
+    "emoji": "🍃",
+    "name": "냉메밀소바",
+    "category": "일식",
+    "price": 9500,
+    "tastes": [
+      "가벼움",
+      "담백"
+    ],
+    "ingredients": [
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "더움"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥"
+    ],
+    "fullness": 2,
+    "time_min": 10,
+    "description": "차가운 쯔유에 찍어 먹는 메밀면"
+  },
+  {
+    "emoji": "🐟",
+    "name": "사케동",
+    "category": "일식",
+    "price": 15000,
+    "tastes": [
+      "담백"
+    ],
+    "ingredients": [
+      "해산물",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "더움"
+    ],
+    "situations": [
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 3,
+    "time_min": 15,
+    "description": "두툼한 연어를 듬뿍 올린 연어덮밥"
+  },
+  {
+    "emoji": "🍤",
+    "name": "텐동",
+    "category": "일식",
+    "price": 12000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "해산물",
+      "밥",
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "비"
+    ],
+    "situations": [
+      "혼밥"
+    ],
+    "fullness": 5,
+    "time_min": 15,
+    "description": "새우·채소 튀김을 소스와 함께 올린 튀김덮밥"
+  },
+  {
+    "emoji": "🐣",
+    "name": "오야코동",
+    "category": "일식",
+    "price": 9500,
+    "tastes": [
+      "담백",
+      "든든"
+    ],
+    "ingredients": [
+      "닭",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "맑음"
+    ],
+    "situations": [
+      "혼밥",
+      "빨리"
+    ],
+    "fullness": 4,
+    "time_min": 10,
+    "description": "닭고기와 달걀을 부드럽게 익힌 덮밥"
+  },
+  {
+    "emoji": "🍝",
+    "name": "크림파스타",
+    "category": "양식",
+    "price": 14000,
+    "tastes": [
+      "기름진"
+    ],
+    "ingredients": [
+      "면",
+      "돼지"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "비"
+    ],
+    "situations": [
+      "동료",
+      "회식"
+    ],
+    "fullness": 4,
+    "time_min": 25,
+    "description": "베이컨과 버섯을 넣은 고소한 크림 파스타"
+  },
+  {
+    "emoji": "🍅",
+    "name": "토마토 해산물 파스타",
+    "category": "양식",
+    "price": 14000,
+    "tastes": [
+      "담백"
+    ],
+    "ingredients": [
+      "면",
+      "해산물"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음"
+    ],
+    "situations": [
+      "동료",
+      "회식"
+    ],
+    "fullness": 3,
+    "time_min": 25,
+    "description": "새우·홍합을 넣은 상큼한 토마토 파스타"
+  },
+  {
+    "emoji": "🍛",
+    "name": "함박스테이크",
+    "category": "양식",
+    "price": 13000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "소",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "추움"
+    ],
+    "situations": [
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 5,
+    "time_min": 20,
+    "description": "육즙 가득한 수제 패티에 데미글라스 소스"
+  },
+  {
+    "emoji": "🍔",
+    "name": "수제버거",
+    "category": "양식",
+    "price": 13000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "소",
+      "빵"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음"
+    ],
+    "situations": [
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 5,
+    "time_min": 20,
+    "description": "두툼한 패티와 감자튀김이 함께하는 버거 세트"
+  },
+  {
+    "emoji": "🍚",
+    "name": "버섯 리조또",
+    "category": "양식",
+    "price": 14000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "밥",
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "비",
+      "흐림"
+    ],
+    "situations": [
+      "동료"
+    ],
+    "fullness": 4,
+    "time_min": 25,
+    "description": "버섯 향 가득한 꾸덕한 크림 리조또"
+  },
+  {
+    "emoji": "🥗",
+    "name": "닭가슴살 샐러드볼",
+    "category": "양식",
+    "price": 11000,
+    "tastes": [
+      "가벼움",
+      "담백"
+    ],
+    "ingredients": [
+      "채소",
+      "닭"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "더움",
+      "맑음"
+    ],
+    "situations": [
+      "혼밥",
+      "빨리"
+    ],
+    "fullness": 2,
+    "time_min": 10,
+    "description": "신선한 채소와 닭가슴살로 가볍게"
+  },
+  {
+    "emoji": "🥪",
+    "name": "샌드위치",
+    "category": "양식",
+    "price": 8000,
+    "tastes": [
+      "가벼움"
+    ],
+    "ingredients": [
+      "빵",
+      "채소",
+      "돼지"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "더움"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥"
+    ],
+    "fullness": 2,
+    "time_min": 5,
+    "description": "햄·치즈·채소를 넣어 바로 먹는 간편식"
+  },
+  {
+    "emoji": "🥩",
+    "name": "런치 스테이크",
+    "category": "양식",
+    "price": 25000,
+    "tastes": [
+      "든든",
+      "기름진"
+    ],
+    "ingredients": [
+      "소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음"
+    ],
+    "situations": [
+      "회식"
+    ],
+    "fullness": 5,
+    "time_min": 40,
+    "description": "접대·회식에 어울리는 스테이크 런치 코스"
+  },
+  {
+    "emoji": "🍕",
+    "name": "피자 런치세트",
+    "category": "양식",
+    "price": 15000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "빵",
+      "돼지"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "비"
+    ],
+    "situations": [
+      "동료",
+      "회식"
+    ],
+    "fullness": 4,
+    "time_min": 25,
+    "description": "화덕 피자 한 판과 샐러드, 나눠 먹기 좋아요"
+  },
+  {
+    "emoji": "🍙",
+    "name": "김밥",
+    "category": "분식",
+    "price": 4500,
+    "tastes": [
+      "가벼움"
+    ],
+    "ingredients": [
+      "밥",
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "더움"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥"
+    ],
+    "fullness": 2,
+    "time_min": 5,
+    "description": "한 줄 들고 바로 먹는 가장 빠른 점심"
+  },
+  {
+    "emoji": "🍢",
+    "name": "떡볶이",
+    "category": "분식",
+    "price": 6000,
+    "tastes": [
+      "매운맛"
+    ],
+    "ingredients": [
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "비"
+    ],
+    "situations": [
+      "동료",
+      "혼밥"
+    ],
+    "fullness": 3,
+    "time_min": 15,
+    "description": "쫄깃한 떡에 달고 매운 고추장 소스"
+  },
+  {
+    "emoji": "🍜",
+    "name": "라면+김밥",
+    "category": "분식",
+    "price": 7500,
+    "tastes": [
+      "매운맛",
+      "든든"
+    ],
+    "ingredients": [
+      "면",
+      "밥"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "비",
+      "추움"
+    ],
+    "situations": [
+      "빨리",
+      "해장",
+      "혼밥"
+    ],
+    "fullness": 4,
+    "time_min": 10,
+    "description": "분식집 황금 조합, 라면에 김밥 한 줄"
+  },
+  {
+    "emoji": "🌶️",
+    "name": "쫄면",
+    "category": "분식",
+    "price": 7000,
+    "tastes": [
+      "매운맛",
+      "가벼움"
+    ],
+    "ingredients": [
+      "면",
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "더움"
+    ],
+    "situations": [
+      "혼밥",
+      "빨리"
+    ],
+    "fullness": 3,
+    "time_min": 10,
+    "description": "새콤달콤 매콤한 양념에 쫄깃한 면"
+  },
+  {
+    "emoji": "🍽️",
+    "name": "경양식 돈가스",
+    "category": "분식",
+    "price": 9000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "돼지",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "흐림"
+    ],
+    "situations": [
+      "혼밥",
+      "동료"
+    ],
+    "fullness": 5,
+    "time_min": 15,
+    "description": "넓적한 돈가스에 브라운 소스, 추억의 맛"
+  },
+  {
+    "emoji": "🥢",
+    "name": "잔치국수",
+    "category": "분식",
+    "price": 6500,
+    "tastes": [
+      "담백",
+      "가벼움"
+    ],
+    "ingredients": [
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "비",
+      "흐림"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥",
+      "해장"
+    ],
+    "fullness": 3,
+    "time_min": 10,
+    "description": "멸치 육수에 소면, 가볍고 따뜻하게"
+  },
+  {
+    "emoji": "🍳",
+    "name": "오므라이스",
+    "category": "분식",
+    "price": 8500,
+    "tastes": [
+      "담백",
+      "든든"
+    ],
+    "ingredients": [
+      "밥",
+      "돼지"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림"
+    ],
+    "situations": [
+      "혼밥"
+    ],
+    "fullness": 4,
+    "time_min": 15,
+    "description": "폭신한 달걀로 감싼 케첩 볶음밥"
+  },
+  {
+    "emoji": "🥵",
+    "name": "비빔국수",
+    "category": "분식",
+    "price": 7000,
+    "tastes": [
+      "매운맛",
+      "가벼움"
+    ],
+    "ingredients": [
+      "면",
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "더움"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥"
+    ],
+    "fullness": 3,
+    "time_min": 10,
+    "description": "새콤매콤한 양념에 비빈 시원한 소면"
+  },
+  {
+    "emoji": "🍜",
+    "name": "쌀국수",
+    "category": "아시안",
+    "price": 11000,
+    "tastes": [
+      "담백",
+      "가벼움"
+    ],
+    "ingredients": [
+      "소",
+      "면"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "비"
+    ],
+    "situations": [
+      "해장",
+      "혼밥"
+    ],
+    "fullness": 3,
+    "time_min": 15,
+    "description": "맑고 깊은 소고기 육수의 베트남 쌀국수"
+  },
+  {
+    "emoji": "🍤",
+    "name": "팟타이",
+    "category": "아시안",
+    "price": 13000,
+    "tastes": [
+      "기름진"
+    ],
+    "ingredients": [
+      "해산물",
+      "면"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음"
+    ],
+    "situations": [
+      "동료"
+    ],
+    "fullness": 4,
+    "time_min": 15,
+    "description": "새우와 숙주를 볶은 달콤짭짤한 태국 볶음면"
+  },
+  {
+    "emoji": "🥢",
+    "name": "분짜",
+    "category": "아시안",
+    "price": 13000,
+    "tastes": [
+      "담백",
+      "가벼움"
+    ],
+    "ingredients": [
+      "돼지",
+      "면",
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "더움",
+      "맑음"
+    ],
+    "situations": [
+      "동료"
+    ],
+    "fullness": 3,
+    "time_min": 20,
+    "description": "숯불 돼지고기와 쌀국수를 새콤한 소스에 찍어"
+  },
+  {
+    "emoji": "🍳",
+    "name": "나시고렝",
+    "category": "아시안",
+    "price": 12000,
+    "tastes": [
+      "기름진",
+      "든든"
+    ],
+    "ingredients": [
+      "닭",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "흐림"
+    ],
+    "situations": [
+      "혼밥"
+    ],
+    "fullness": 4,
+    "time_min": 15,
+    "description": "달걀 프라이를 올린 인도네시아식 볶음밥"
+  },
+  {
+    "emoji": "🍛",
+    "name": "인도 커리",
+    "category": "아시안",
+    "price": 14000,
+    "tastes": [
+      "매운맛",
+      "든든"
+    ],
+    "ingredients": [
+      "닭",
+      "밥"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "비",
+      "흐림",
+      "추움"
+    ],
+    "situations": [
+      "동료",
+      "회식"
+    ],
+    "fullness": 5,
+    "time_min": 25,
+    "description": "향신료 진한 치킨 커리에 난 또는 밥"
+  },
+  {
+    "emoji": "🦐",
+    "name": "똠얌꿍",
+    "category": "아시안",
+    "price": 15000,
+    "tastes": [
+      "매운맛"
+    ],
+    "ingredients": [
+      "해산물"
+    ],
+    "has_soup": true,
+    "weathers": [
+      "추움",
+      "비"
+    ],
+    "situations": [
+      "동료",
+      "해장"
+    ],
+    "fullness": 3,
+    "time_min": 25,
+    "description": "새콤매콤한 태국식 새우 수프"
+  },
+  {
+    "emoji": "🥖",
+    "name": "반미",
+    "category": "아시안",
+    "price": 8000,
+    "tastes": [
+      "가벼움"
+    ],
+    "ingredients": [
+      "빵",
+      "돼지",
+      "채소"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "맑음",
+      "더움"
+    ],
+    "situations": [
+      "빨리",
+      "혼밥"
+    ],
+    "fullness": 2,
+    "time_min": 5,
+    "description": "바삭한 바게트에 고기와 절임채소를 넣은 샌드위치"
+  },
+  {
+    "emoji": "🍚",
+    "name": "카오팟",
+    "category": "아시안",
+    "price": 11000,
+    "tastes": [
+      "기름진"
+    ],
+    "ingredients": [
+      "밥",
+      "해산물"
+    ],
+    "has_soup": false,
+    "weathers": [
+      "흐림",
+      "맑음"
+    ],
+    "situations": [
+      "혼밥",
+      "빨리"
+    ],
+    "fullness": 4,
+    "time_min": 12,
+    "description": "피시소스 향이 은은한 태국식 새우볶음밥"
+  }
+]

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}점심메뉴 추천기{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body>
+{% set ep = request.endpoint or '' %}
+<nav class="topnav" aria-label="주 메뉴">
+  <div class="topnav-in">
+    <a class="logo" href="{{ url_for('main.index') }}">🍱 <span>Lunch Picker</span></a>
+    <div class="navlinks">
+      <a href="{{ url_for('main.index') }}" {% if ep == 'main.index' %}class="on" aria-current="page"{% endif %}>메인</a>
+      <a href="{{ url_for('main.history') }}" {% if ep == 'main.history' %}class="on" aria-current="page"{% endif %}>결정 이력</a>
+      <a href="{{ url_for('admin.menus') }}" {% if ep.startswith('admin.') %}class="on" aria-current="page"{% endif %}>관리자</a>
+    </div>
+  </div>
+</nav>
+<div class="wrap {% block wrap_class %}{% endblock %}">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="flashes">
+      {% for cat, msg in messages %}<div class="flash {{ cat }}" role="status">{{ msg }}</div>{% endfor %}
+    </div>
+    {% endif %}
+  {% endwith %}
+  {% block content %}{% endblock %}
+</div>
+{% block after %}{% endblock %}
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+  <header class="top">
+    <div class="brand">
+      <div class="kicker">LUNCH PICKER</div>
+      <h1>점심메뉴<br><span>추천기</span></h1>
+      <p>취향·예산·날씨·상황을 고르면 오늘 점심을 대신 골라 드려요. 고민은 짧게, 점심은 맛있게.</p>
+    </div>
+    <section class="today" id="today" aria-label="오늘의 추천 메뉴">
+      <div class="body"><div class="lbl">🍱 오늘의 추천 메뉴</div><div class="name">불러오는 중…</div></div>
+    </section>
+  </header>
+
+  <div class="layout">
+    <aside class="panel" aria-label="조건 설정">
+      <div class="panel-h">
+        <h2>🍽️ 조건 설정</h2>
+        <button class="linkbtn" id="resetFilters" type="button">조건 초기화</button>
+      </div>
+      <div id="filters"></div>
+      <div class="history">
+        <h3>🕘 최근 결정한 메뉴</h3>
+        <div id="history"></div>
+        <a class="morelink" href="{{ url_for('main.history') }}">전체 이력·통계 보기 →</a>
+      </div>
+    </aside>
+
+    <main>
+      <div class="actions">
+        <button class="btn primary" id="drawBtn" type="button">🎲 랜덤 뽑기</button>
+        <button class="btn ghost" id="redrawBtn" type="button" disabled>🔄 다시 뽑기</button>
+        <span class="hint" id="poolHint"></span>
+      </div>
+
+      <section class="spot idle" id="spot" aria-live="polite">
+        <div class="big">🎲</div>
+        <div><b>랜덤 뽑기</b>를 누르면 지금 조건에 맞는 메뉴 하나를 뽑아 드려요.</div>
+        <div style="font-size:13px">조건을 하나도 고르지 않아도 바로 뽑을 수 있어요.</div>
+      </section>
+
+      <section>
+        <div class="sec-h">
+          <h2>✨ 추천 메뉴</h2>
+          <span class="sub" id="listSub"></span>
+        </div>
+        <div id="notice"></div>
+        <div class="cards" id="cards"></div>
+      </section>
+
+      <section>
+        <div class="sec-h">
+          <h2>⚖️ 후보 비교</h2>
+          <span class="sub" id="candSub">최대 3개까지 담을 수 있어요</span>
+        </div>
+        <div id="compare"></div>
+      </section>
+    </main>
+  </div>
+{% endblock %}
+
+{% block after %}
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="finalName">
+  <div class="modal" id="modal"></div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}
